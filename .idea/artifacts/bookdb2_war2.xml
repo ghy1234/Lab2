@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bookdb2:war2">
+    <output-path>$PROJECT_DIR$/out/artifacts/bookdb2_war2</output-path>
+    <root id="archive" name="bookdb2_war.war">
+      <element id="artifact" artifact-name="bookdb2:war exploded" />
+    </root>
+  </artifact>
+</component>

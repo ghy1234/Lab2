@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <package name="default" extends="struts-default">
+        <action name="allbook" class="action.Allbook">
+                <result name="success">pagedata.jsp</result>
+        </action>
+        <action name="allauthor" class="action.Allauthor">
+            <result name="success">authordata.jsp</result>
+        </action>
+        <action name="findbook" class="action.findbook">
+            <result name="success">showbook.jsp</result>
+            <result name="input">showbook.jsp</result>
+        </action>
+        <action name="finddetail" class="action.finddetail">
+            <result name="success">showdetail.jsp</result>
+            <result name="input">showdetail.jsp</result>
+        </action>
+        <action name="delete" class="action.delete">
+            <result name="success">delete1.jsp</result>
+            <result name="input">delete2.jsp</result>
+        </action>
+        <action name="updatebook" class="action.updatebook">
+            <result name="success">updatebook1.jsp</result>
+            <result name="input">updatebook2.jsp</result>
+        </action>
+        <action name="addbook" class="action.addbook">
+            <result name="success">addbook1.jsp</result>
+            <result name="input">addbook2.jsp</result>
+            <result name="noauthor">addbook3.jsp</result>
+        </action>
+        <action name="addauthor" class="action.addauthor">
+            <result name="success">addauthor1.jsp</result>
+            <result name="input">addauthor2.jsp</result>
+        </action>
+    </package>
+</struts>
